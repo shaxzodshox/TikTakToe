@@ -8,6 +8,7 @@
     tools:context=".MainActivity">
 
     <GridLayout
+        android:id="@+id/gridLayout"
         android:layout_width="match_parent"
         android:layout_height="360dp"
         android:layout_centerInParent="true"
@@ -122,4 +123,34 @@
             android:onClick="dropIn"
             android:tag="8" />
     </GridLayout>
+
+    <LinearLayout
+        android:id="@+id/playAgainLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#fffaff0b"
+        android:padding="30dp"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/winnerMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textSize="24sp"
+            android:text="TextView" />
+
+        <Button
+            android:id="@+id/playAgainBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Play Again"
+            android:onClick="playAgain"
+            />
+
+    </LinearLayout>
+
 </RelativeLayout>
